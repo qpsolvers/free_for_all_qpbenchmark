@@ -8,12 +8,12 @@ assignees: ''
 
 ### Problem
 
-I propose to add the following problem to the free-for-all test set. The problem can be generated as follows:
+I propose to add the following problem to the free-for-all test set:
 
 <!--
-    Make sure you fill out the <FIELDS>:
+    Make sure you fill out all <FIELDS>:
 
-    - COPYRIGHT_HOLDER: you or your employer
+    - COPYRIGHT_HOLDER: you or your employer.
     - DESCRIPTION: Describe your problem for interested readers.
     - PROBLEM_CODE: Name your problem in up to eight capital letters.
 -->
@@ -53,18 +53,12 @@ if __name__ == "__main__":
 
 ### Context
 
-<!--
-    Context around this problem: how did it arise? Why is it interesting to add
-    it to the benchmark?
--->
+<!-- How did this problem arise? Why is it interesting to add it to the benchmark? -->
 
 This problem is interesting because...
 
 ### References
 
-<!--
-    If the problem arose in a specific context, such as an engineering problem
-    or a research paper, put the relevant references here.
--->
+<!-- If the problem is detailed in a report or research paper, put the relevant references here. -->
 
-1. Foo Bar *et al.*, "...", 2022.
+1. [Title](link), Foo Bar *et al.*, venue, year.
