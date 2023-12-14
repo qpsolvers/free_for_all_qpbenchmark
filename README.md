@@ -1,6 +1,6 @@
 # Free-for-all test set for QP solvers
 
-This repository contains quadratic programs (QPs) in a format suitable for [qpbenchmark](https://github.com/qpsolvers/qpbenchmark). It is open to problems from all fields. (To keep a reasonable bandwidth, new problems are submitted one at a time.) Here is the report produced by this benchmarking tool:
+This repository contains quadratic programs (QPs) in a format suitable for [qpbenchmark](https://github.com/qpsolvers/qpbenchmark). It is [free-for-all](https://en.wiktionary.org/wiki/free-for-all#Noun), open to problems from all fields, hard and easy. Here is the report produced by the benchmarking tool:
 
 <p align=center>
   📈 <a href="results/free_for_all_qpbenchmark_ref.md"><strong>Free-for-all test set results</strong></a>
@@ -15,7 +15,7 @@ conda env create -f environment.yaml
 conda activate qpbenchmark
 ```
 
-It is also possible to install the benchmark [from PyPI](https://github.com/qpsolvers/qpbenchmark#installation).
+It is also possible to install ``qpbenchmark`` [from PyPI](https://github.com/qpsolvers/qpbenchmark#installation).
 
 ## Usage
 
@@ -25,7 +25,7 @@ Run the test set as follows:
 qpbenchmark ./free_for_all_qpbenchmark.py run
 ```
 
-The outcome is a standardized report comparing all available solvers against the different [benchmark metrics](https://github.com/qpsolvers/qpbenchmark#metrics). You can check out and post your own results in the [Results forum](https://github.com/qpsolvers/free_for_all_qpbenchmark/discussions/categories/results).
+The outcome, written to the `results/` directory, is a standardized report comparing all available solvers against the different [benchmark metrics](https://github.com/qpsolvers/qpbenchmark#metrics). You can check out and post your own results in the [Results forum](https://github.com/qpsolvers/free_for_all_qpbenchmark/discussions/categories/results).
 
 ## Contributions
 
