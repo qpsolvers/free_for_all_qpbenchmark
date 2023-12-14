@@ -8,16 +8,7 @@ assignees: ''
 
 ### Problem
 
-I propose to add the following problem to the free-for-all test set.
-
-> [!NOTE]
-> Please suggest less than five problem. If your problems have parameters,
-> pick the five sets of values you find most relevant.
-
-
-### Generation script
-
-The problem can be generated as follows:
+I propose to add the following problem to the free-for-all test set. The problem can be generated as follows:
 
 <!--
     Make sure you fill out the <FIELDS>:
@@ -40,18 +31,21 @@ from os import path
 
 from qpbenchmark.problem import Problem
 
+# Cost: 1/2 x^T P x + q^T x
+P = ...
+q = ...
+# Linear inequalities (None to disable): G x <= h
+G = ...
+h = ...
+# Linear equalities (None to disable): A x == b
+A = ...
+b = ...
+# Box inequalities (None to disable): lb <= x <= ub
+lb = ...
+ub = ...
+
 if __name__ == "__main__":
-    problem = Problem(
-        P=...,
-        q=...,
-        G=..,
-        h=..,
-        A=...,
-        b=...,
-        lb=...,
-        ub=...,
-        name="<PROBLEM_CODE>",
-    )
+    problem = Problem(P, q, G, h, A, b, lb, ub, name="<PROBLEM_CODE>")
     script_dir = path.dirname(path.abspath(__file__))
     data_dir = path.realpath(path.join(script_dir, "../data"))
     problem.save(f"{data_dir}/{problem.name}.npz")
