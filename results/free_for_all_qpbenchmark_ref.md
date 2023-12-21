@@ -1,9 +1,9 @@
 # Free-for-all test set
 
-| Number of problems | 11       |
+| Number of problems | 11 |
 |:-------------------|:--------------------|
-| Benchmark version  | 2.1.0rc1 |
-| Date               | 2023-12-14 14:32:18.588048+00:00              |
+| Benchmark version  | 2.1.0 |
+| Date               | 2023-12-21 14:05:47.895361+00:00 |
 | CPU                | [Intel(R) Core(TM) i7-6500U CPU @ 2.50GHz](#cpu-info) |
 | Run by             | [@stephane-caron](https://github.com/stephane-caron/) |
 
