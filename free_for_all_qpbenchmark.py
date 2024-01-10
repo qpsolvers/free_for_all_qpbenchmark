@@ -7,10 +7,10 @@
 """Free-for-all test set."""
 
 import os
-import sys
 from typing import Iterator
 
 import qpbenchmark
+from qpbenchmark.benchmark import main
 from qpbenchmark.problem import Problem
 
 
@@ -59,5 +59,4 @@ class FreeForAllQpbenchmark(qpbenchmark.TestSet):
 
 
 if __name__ == "__main__":
-    fname = sys.argv[0]
-    print(f"This file is expected to be run as ``qpbenchmark {fname}``")
+    main(test_set_path=os.path.abspath(__file__))
