@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# Copyright 2023 Inria
 # SPDX-License-Identifier: Apache-2.0
+# Copyright 2023 Inria
 
 """Free-for-all test set."""
 
 import os
+import sys
 from typing import Iterator
 
 import qpbenchmark
@@ -55,3 +56,8 @@ class FreeForAllQpbenchmark(qpbenchmark.TestSet):
         for fname in os.listdir(self.data_dir):
             if fname.endswith(".npz"):
                 yield Problem.load(os.path.join(self.data_dir, fname))
+
+
+if __name__ == "__main__":
+    fname = sys.argv[0]
+    print(f"This file is expected to be run as ``qpbenchmark {fname}``")
