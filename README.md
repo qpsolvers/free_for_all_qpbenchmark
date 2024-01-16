@@ -36,6 +36,7 @@ The problems in this test set have been contributed by:
 | ``ICULS*`` | [@stephane-caron](https://github.com/stephane-caron) | Proposed in [#1](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/1) |
 | ``GNAR*`` | [@stephane-caron](https://github.com/stephane-caron) | Proposed in [#2](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/2) and [#3](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/3), details in [this paper](https://hal.inria.fr/hal-01418462/document) |
 | ``QUADCMPC*`` | [@paLeziart](https://github.com/paLeziart) | Proposed in [mpc\_qpbenchmark#1](https://github.com/qpsolvers/mpc_qpbenchmark/issues/1), details in [this thesis](https://laas.hal.science/tel-03936109/document) |
+| ``DOCSLS`` | [@stephane-caron](https://github.com/stephane-caron) | From [this issue](https://github.com/qpsolvers/qpsolvers/issues/278) |
 
 ## Citation
 
