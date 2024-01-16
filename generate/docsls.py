@@ -24,5 +24,7 @@ q = -(s.T @ R)
 if __name__ == "__main__":
     script_dir = path.dirname(path.abspath(__file__))
     data_dir = path.realpath(path.join(script_dir, "../data"))
-    problem = Problem(P=P, q=q, G=G, h=h, name="DOCSLS")
+    problem = Problem(
+        P=P, q=q, G=G, h=h, A=None, b=None, lb=None, ub=None, name="DOCSLS"
+    )
     problem.save(f"{data_dir}/{problem.name}.npz")
