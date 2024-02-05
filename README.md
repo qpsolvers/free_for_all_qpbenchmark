@@ -27,15 +27,9 @@ qpbenchmark ./free_for_all_qpbenchmark.py run
 
 The outcome, written to the `results/` directory, is a standardized report comparing all available solvers against the different [benchmark metrics](https://github.com/qpsolvers/qpbenchmark#metrics). You can check out and post your own results in the [Results forum](https://github.com/qpsolvers/free_for_all_qpbenchmark/discussions/categories/results).
 
-## Submit a problem
+## Problems
 
-New problems are welcome and easy to submit: send your code or save your problem to a file (*e.g.* using [`Problem.save`](https://qpsolvers.github.io/qpsolvers/quadratic-programming.html#qpsolvers.problem.Problem.save) from ``qpsolvers``), and send it via this form:
-
-- [Submit a new problem](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/new?template=new_problem.md)
-
-## Contributions
-
-The problems in this test set have been contributed by:
+Here are all problems in this test set:
 
 | Problem name  | CUTEr [classification](https://www.cuter.rl.ac.uk//Problems/classification.shtml) | Details |
 |---------------|-------------|-----------------------------------|
@@ -66,6 +60,12 @@ These problems have been contributed by:
 
 - [@paLeziart](https://github.com/paLeziart): QUADCMPC
 - [@stephane-caron](https://github.com/stephane-caron): LIPMWALK, WHLIPBAL
+
+## Adding a new problem
+
+New problems are welcome and easy to submit: send your code or save your problem to a file (*e.g.* using [`Problem.save`](https://qpsolvers.github.io/qpsolvers/quadratic-programming.html#qpsolvers.problem.Problem.save) from ``qpsolvers``), and send it via this form:
+
+- **[Submit a new problem](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/new?template=new_problem.md)**
 
 ## Citation
 
