@@ -37,20 +37,35 @@ New problems are welcome and easy to submit: send your code or save your problem
 
 The problems in this test set have been contributed by:
 
-| Problems | Contributor | CUTEr [classification](https://www.cuter.rl.ac.uk//Problems/classification.shtml) | Details |
-|----------|-------------|--------------------------|---------|
-| ``DOCSLS`` | [@stephane-caron](https://github.com/stephane-caron) | QLR2-AN-3-3 | From [this issue](https://github.com/qpsolvers/qpsolvers/issues/278) |
-| ``GNAR0`` | [@stephane-caron](https://github.com/stephane-caron) | QLR2-AN-2-1 | Proposed in [#2](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/2) and [#3](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/3), details in [this paper](https://hal.inria.fr/hal-01418462/document) |
-| ``GNAR1`` | [@stephane-caron](https://github.com/stephane-caron) | QLR2-AN-2-1 | ↑ |
-| ``GNAR2`` | [@stephane-caron](https://github.com/stephane-caron) | QLR2-AN-2-1 | ↑ |
-| ``GNAR3`` | [@stephane-caron](https://github.com/stephane-caron) | QLR2-AN-2-1 | ↑ |
-| ``GNAR4`` | [@stephane-caron](https://github.com/stephane-caron) | QLR2-AN-2-1 | ↑ |
-| ``ICULS0`` | [@stephane-caron](https://github.com/stephane-caron) | QLR2-AN-1000-0 | Proposed in [#1](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/1) |
-| ``ICULS1`` | [@stephane-caron](https://github.com/stephane-caron) | QLR2-AN-1000-0 | ↑ |
-| ``QUADCMPC1`` | [@paLeziart](https://github.com/paLeziart) | QLR2-RN-768-896 | Proposed in [mpc\_qpbenchmark#1](https://github.com/qpsolvers/mpc_qpbenchmark/issues/1), details in [this thesis](https://laas.hal.science/tel-03936109/document) |
-| ``QUADCMPC2`` | [@paLeziart](https://github.com/paLeziart) | QLR2-RN-768-896 | ↑ |
-| ``QUADCMPC3`` | [@paLeziart](https://github.com/paLeziart) | QLR2-RN-768-896 | ↑ |
-| ``QUADCMPC4`` | [@paLeziart](https://github.com/paLeziart) | QLR2-RN-768-896 | ↑ |
+| Problem name  | CUTEr [classification](https://www.cuter.rl.ac.uk//Problems/classification.shtml) | Details |
+|---------------|-------------|-----------------------------------|
+| ``DOCSLS``    | QLR2-AN-3-3 | From [this issue](https://github.com/qpsolvers/qpsolvers/issues/278) |
+| ``GNAR0``     | QLR2-AN-2-1 | Proposed in [#2](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/2) and [#3](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/3), details in [this paper](https://hal.inria.fr/hal-01418462/document) |
+| ``GNAR1``     | QLR2-AN-2-1 | ↑ |
+| ``GNAR2``     | QLR2-AN-2-1 | ↑ |
+| ``GNAR3``     | QLR2-AN-2-1 | ↑ |
+| ``GNAR4``     | QLR2-AN-2-1 | ↑ |
+| ``ICULS0``    | QLR2-AN-1000-0 | Proposed in [#1](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/1) |
+| ``ICULS1``    | QLR2-AN-1000-0 | ↑ |
+| ``LIPMWALK0`` | QLR2-RN-16-32 | Proposed in [#3](https://github.com/qpsolvers/mpc_qpbenchmark/issues/3), details in [this paper](https://inria.hal.science/inria-00390462) |
+| ``LIPMWALK1`` | QLR2-RN-16-32 | ↑ |
+| ``LIPMWALK2`` | QLR2-RN-16-32 | ↑ |
+| ``LIPMWALK3`` | QLR2-RN-16-32 | ↑ |
+| ``LIPMWALK4`` | QLR2-RN-16-32 | ↑ |
+| ``QUADCMPC1`` | QLR2-RN-768-896 | Proposed in [mpc\_qpbenchmark#1](https://github.com/qpsolvers/mpc_qpbenchmark/issues/1), details in [this thesis](https://laas.hal.science/tel-03936109/document) |
+| ``QUADCMPC2`` | QLR2-RN-768-896 | ↑ |
+| ``QUADCMPC3`` | QLR2-RN-768-896 | ↑ |
+| ``QUADCMPC4`` | QLR2-RN-768-896 | ↑ |
+| ``WHLIPBAL0`` | QLR2-RN-50-100 | Proposed in [#4](https://github.com/qpsolvers/mpc_qpbenchmark/issues/4), details in [this paper](https://inria.hal.science/hal-04198663/) |
+| ``WHLIPBAL1`` | QLR2-RN-50-100 | ↑ |
+| ``WHLIPBAL2`` | QLR2-RN-50-100 | ↑ |
+| ``WHLIPBAL3`` | QLR2-RN-50-100 | ↑ |
+| ``WHLIPBAL4`` | QLR2-RN-50-100 | ↑ |
+
+These problems have been contributed by:
+
+- [@paLeziart](https://github.com/paLeziart): QUADCMPC
+- [@stephane-caron](https://github.com/stephane-caron): LIPMWALK, WHLIPBAL
 
 ## Citation
 
