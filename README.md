@@ -73,6 +73,8 @@ New problems are welcome and easy to submit: send your code or save your problem
 
 - **[Submit a new problem](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/new?template=new_problem.md)**
 
+You can also contribute by running the benchmark on your machine and posting your results to the [Results forum](https://github.com/qpsolvers/free_for_all_qpbenchmark/discussions/categories/results).
+
 ## Citation
 
 If you use `qpbenchmark` in your scientific works, please cite it *e.g.* as follows:
