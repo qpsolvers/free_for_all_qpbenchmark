@@ -10,9 +10,9 @@ assignees: ''
 
 I propose to add the following problem to the free-for-all test set:
 
-- **Option 1:** my problem is in a file that I have [saved via qpsolvers](https://qpsolvers.github.io/qpsolvers/quadratic-programming.html#qpsolvers.problem.Problem.save): [zip your ``.npz`` file then drag-and-drop it here]
+- [ ] **Option 1:** my problem is in a file that I have [saved via qpsolvers](https://qpsolvers.github.io/qpsolvers/quadratic-programming.html#qpsolvers.problem.Problem.save): [zip your ``.npz`` file then drag-and-drop it here]
 
-- **Option 2:** here is working code to generate the problem:
+- [ ] **Option 2:** here is working code to generate the problem:
 
 <details>
 <summary>Click here to expand a code template.</summary>
