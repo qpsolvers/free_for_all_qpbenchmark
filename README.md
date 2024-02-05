@@ -84,3 +84,10 @@ If you use `qpbenchmark` in your scientific works, please cite it *e.g.* as foll
 ```
 
 You can also click on ``Cite this repository`` at the top-right of the [repository page](https://github.com/qpsolvers/qpbenchmark/).
+
+## See also
+
+Related test sets that may be relevant to your use cases:
+
+- [Maros-Meszaros test set](https://github.com/qpsolvers/maros_meszaros_qpbenchmark/): a standard test set with problems designed to be difficult.
+- [Model predictive control](https://github.com/qpsolvers/mpc_qpbenchmark): model predictive control problems arising e.g. in robotics.
