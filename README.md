@@ -37,12 +37,17 @@ New problems are welcome and easy to submit: send your code or save your problem
 
 The problems in this test set have been contributed by:
 
-| Problems | Contributor | Details |
-|----------|-------------|---------|
-| ``ICULS*`` | [@stephane-caron](https://github.com/stephane-caron) | Proposed in [#1](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/1) |
-| ``GNAR*`` | [@stephane-caron](https://github.com/stephane-caron) | Proposed in [#2](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/2) and [#3](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/3), details in [this paper](https://hal.inria.fr/hal-01418462/document) |
-| ``QUADCMPC*`` | [@paLeziart](https://github.com/paLeziart) | Proposed in [mpc\_qpbenchmark#1](https://github.com/qpsolvers/mpc_qpbenchmark/issues/1), details in [this thesis](https://laas.hal.science/tel-03936109/document) |
-| ``DOCSLS`` | [@stephane-caron](https://github.com/stephane-caron) | From [this issue](https://github.com/qpsolvers/qpsolvers/issues/278) |
+| Problems | Contributor | CUTEr [classification](https://www.cuter.rl.ac.uk//Problems/classification.shtml) | Details |
+|----------|-------------|--------------------------|---------|
+| ``DOCSLS`` | [@stephane-caron](https://github.com/stephane-caron) | QLR2-AN-3-3 | From [this issue](https://github.com/qpsolvers/qpsolvers/issues/278) |
+| ``GNAR0`` | [@stephane-caron](https://github.com/stephane-caron) | QLR2-AN-2-1 | Proposed in [#2](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/2) and [#3](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/3), details in [this paper](https://hal.inria.fr/hal-01418462/document) |
+| ``GNAR1`` | [@stephane-caron](https://github.com/stephane-caron) | QLR2-AN-2-1 | Proposed in [#2](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/2) and [#3](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/3), details in [this paper](https://hal.inria.fr/hal-01418462/document) |
+| ``GNAR2`` | [@stephane-caron](https://github.com/stephane-caron) | QLR2-AN-2-1 | Proposed in [#2](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/2) and [#3](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/3), details in [this paper](https://hal.inria.fr/hal-01418462/document) |
+| ``GNAR3`` | [@stephane-caron](https://github.com/stephane-caron) | QLR2-AN-2-1 | Proposed in [#2](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/2) and [#3](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/3), details in [this paper](https://hal.inria.fr/hal-01418462/document) |
+| ``GNAR4`` | [@stephane-caron](https://github.com/stephane-caron) | QLR2-AN-2-1 | Proposed in [#2](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/2) and [#3](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/3), details in [this paper](https://hal.inria.fr/hal-01418462/document) |
+| ``ICULS0`` | [@stephane-caron](https://github.com/stephane-caron) | QLR2-AN-1000-0 | Proposed in [#1](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/1) |
+| ``ICULS1`` | [@stephane-caron](https://github.com/stephane-caron) | QLR2-AN-1000-0 | Proposed in [#1](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/1) |
+| ``QUADCMPC1`` | [@paLeziart](https://github.com/paLeziart) | QLR2-RN-768-896 | Proposed in [mpc\_qpbenchmark#1](https://github.com/qpsolvers/mpc_qpbenchmark/issues/1), details in [this thesis](https://laas.hal.science/tel-03936109/document) |
 
 ## Citation
 
