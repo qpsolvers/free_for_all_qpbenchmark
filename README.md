@@ -22,7 +22,7 @@ It is also possible to install the benchmark individually by ``pip install qpben
 Run the test set as follows:
 
 ```
-qpbenchmark ./free_for_all_qpbenchmark.py run
+python free_for_all_qpbenchmark.py run
 ```
 
 The outcome, written to the `results/` directory, is a standardized report comparing all available solvers against the different [benchmark metrics](https://github.com/qpsolvers/qpbenchmark#metrics). You can check out and post your own results in the [Results forum](https://github.com/qpsolvers/free_for_all_qpbenchmark/discussions/categories/results).
@@ -31,8 +31,14 @@ The outcome, written to the `results/` directory, is a standardized report compa
 
 Here are all problems in this test set:
 
-| Problem name  | CUTEr [classification](https://www.cuter.rl.ac.uk//Problems/classification.shtml) | Details |
+| Problem name  | CUTEr [classification](https://www.cuter.rl.ac.uk//Problems/classification.shtml) | Source and details |
 |---------------|-------------|-----------------------------------|
+| ``CONT-050``  | QLR2-AN-2597-2401 | [Maros-Meszaros test set](https://www.cuter.rl.ac.uk/Problems/marmes.shtml) |
+| ``CONT-100``  | QLR2-AN-10197-9801 | ↑ |
+| ``CONT-101``  | QLR2-AN-10197-10098 | ↑ |
+| ``CONT-200``  | QLR2-AN-40397-39601 | ↑ |
+| ``CONT-201``  | QLR2-AN-40397-40198 | ↑ |
+| ``CONT-300``  | QLR2-AN-90597-90298 | ↑ |
 | ``DOCSLS``    | QLR2-AN-3-3 | From [this issue](https://github.com/qpsolvers/qpsolvers/issues/278) |
 | ``GNAR0``     | QLR2-AN-2-1 | Proposed in [#2](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/2) and [#3](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/3), details in [this paper](https://hal.inria.fr/hal-01418462/document) |
 | ``GNAR1``     | QLR2-AN-2-1 | ↑ |
@@ -61,7 +67,7 @@ These problems have been contributed by:
 - [@paLeziart](https://github.com/paLeziart): QUADCMPC
 - [@stephane-caron](https://github.com/stephane-caron): LIPMWALK, WHLIPBAL
 
-## Adding a new problem
+## Adding a problem
 
 New problems are welcome and easy to submit: send your code or save your problem to a file (*e.g.* using [`Problem.save`](https://qpsolvers.github.io/qpsolvers/quadratic-programming.html#qpsolvers.problem.Problem.save) from ``qpsolvers``), and send it via this form:
 
@@ -82,8 +88,6 @@ If you use `qpbenchmark` in your scientific works, please cite it *e.g.* as foll
   year = {2024}
 }
 ```
-
-You can also click on ``Cite this repository`` at the top-right of the [repository page](https://github.com/qpsolvers/qpbenchmark/).
 
 ## See also
 
