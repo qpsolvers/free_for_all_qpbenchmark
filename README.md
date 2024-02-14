@@ -31,7 +31,7 @@ The outcome, written to the `results/` directory, is a standardized report compa
 
 Here are all problems in this test set:
 
-| Problem name  | CUTEr [classification](https://www.cuter.rl.ac.uk//Problems/classification.shtml) | Source and details |
+| Problem name  | CUTE [classification](https://www.cuter.rl.ac.uk//Problems/classification.shtml) | Source and details |
 |---------------|-------------|-----------------------------------|
 | ``CONT-050``  | QLR2-AN-2597-2401 | [Maros-Meszaros test set](https://www.cuter.rl.ac.uk/Problems/marmes.shtml) |
 | ``CONT-100``  | QLR2-AN-10197-9801 | ↑ |
