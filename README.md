@@ -2,9 +2,11 @@
 
 This repository contains quadratic programs (QPs) in a format suitable for [qpbenchmark](https://github.com/qpsolvers/qpbenchmark). It is [free-for-all](https://en.wiktionary.org/wiki/free-for-all#Noun), open to problems from all fields, hard and easy. Here is the report produced by the benchmarking tool:
 
-<p align=center>
-  📈 <a href="results/free_for_all_qpbenchmark_ref.md"><strong>Free-for-all test set results</strong></a>
-</p>
+- 📈 <a href="results/free_for_all_qpbenchmark_ref.md"><strong>Free-for-all test set results</strong></a>
+
+Are you working on a QP right now? Join the benchmark by submitting it to this test set:
+
+- **[Submit a new problem](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/new?template=new_problem.md)**
 
 ## Installation
 
@@ -67,13 +69,9 @@ These problems have been contributed by:
 - [@paLeziart](https://github.com/paLeziart): QUADCMPC
 - [@stephane-caron](https://github.com/stephane-caron): LIPMWALK, WHLIPBAL
 
-## Adding a problem
+## Contributing
 
-New problems are welcome and easy to submit: send your code or save your problem to a file (*e.g.* using [`Problem.save`](https://qpsolvers.github.io/qpsolvers/quadratic-programming.html#qpsolvers.problem.Problem.save) from ``qpsolvers``), and send it via this form:
-
-- **[Submit a new problem](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/new?template=new_problem.md)**
-
-You can also contribute by running the benchmark on your machine and posting your results to the [Results forum](https://github.com/qpsolvers/free_for_all_qpbenchmark/discussions/categories/results).
+New problems are welcome: open a PR (preferred), or complete the **[submission form](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/new?template=new_problem.md)** and we will add them to the test set. You can also contribute by running the benchmark on your machine and posting your results to the [Results forum](https://github.com/qpsolvers/free_for_all_qpbenchmark/discussions/categories/results).
 
 ## Citation
 
