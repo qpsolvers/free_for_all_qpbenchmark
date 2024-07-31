@@ -51,6 +51,11 @@ class FreeForAll(qpbenchmark.TestSet):
     def __add_known_solver_issues(self):
         # https://github.com/Simple-Robotics/proxsuite/issues/63
         self.known_solver_issues.add(("QGFRDXPN", "proxqp"))
+        self.known_solver_issues.add(("CONT-100", "highs"))
+        self.known_solver_issues.add(("CONT-101", "highs"))
+        self.known_solver_issues.add(("CONT-200", "highs"))
+        self.known_solver_issues.add(("CONT-201", "highs"))
+        self.known_solver_issues.add(("CONT-300", "highs"))
         # https://github.com/ERGO-Code/HiGHS/issues/995
         self.known_solver_issues.add(("STADAT1", "highs"))
 
