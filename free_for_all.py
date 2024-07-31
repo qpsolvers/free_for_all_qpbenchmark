@@ -18,7 +18,7 @@ from qpbenchmark.benchmark import main
 from qpbenchmark.problem import Problem
 
 
-class FreeForAllQpbenchmark(qpbenchmark.TestSet):
+class FreeForAll(qpbenchmark.TestSet):
     """Free-for-all test set.
 
     Note:
@@ -49,9 +49,6 @@ class FreeForAllQpbenchmark(qpbenchmark.TestSet):
         self.__add_known_solver_timeouts()
 
     def __add_known_solver_issues(self):
-        # Segmentation faults (problems are too large?)
-        self.known_solver_issues.add(("CONT-200", "hpipm"))
-        self.known_solver_issues.add(("CONT-201", "hpipm"))
         # https://github.com/Simple-Robotics/proxsuite/issues/63
         self.known_solver_issues.add(("QGFRDXPN", "proxqp"))
         # https://github.com/ERGO-Code/HiGHS/issues/995
