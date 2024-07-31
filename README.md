@@ -2,7 +2,7 @@
 
 This repository contains quadratic programs (QPs) in a format suitable for [qpbenchmark](https://github.com/qpsolvers/qpbenchmark). It is [free-for-all](https://en.wiktionary.org/wiki/free-for-all#Noun), open to problems from all fields, hard and easy. Here is the report produced by the benchmarking tool:
 
-- 📈 <a href="results/free_for_all_qpbenchmark_ref.md"><strong>Free-for-all test set results</strong></a>
+- 📈 <a href="results/free_for_all_qpbenchmark.md"><strong>Free-for-all test set results</strong></a>
 
 Are you working on a QP right now? Join the benchmark by submitting it to this test set:
 
