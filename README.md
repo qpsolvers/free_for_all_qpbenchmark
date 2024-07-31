@@ -29,6 +29,15 @@ python free_for_all.py run
 
 The outcome, written to the `results/` directory, is a standardized report comparing all available solvers against the different [benchmark metrics](https://github.com/qpsolvers/qpbenchmark#metrics). You can check out and post your own results in the [Results forum](https://github.com/qpsolvers/free_for_all_qpbenchmark/discussions/categories/results).
 
+## Subset
+
+A subset is distributed in this repository:
+
+| Subset name | Description | Problems | Results |
+|-------------|-------------|----------|---------|
+| - | All problems. | 28 / 28 | [Report](https://github.com/qpsolvers/free_for_all_qpbenchmark/blob/main/results/free_for_all.md) |
+| Dense | Excluding large sparse problems. | 22 / 28 | [Report](https://github.com/qpsolvers/free_for_all_qpbenchmark/blob/main/results/free_for_all_dense.md) |
+
 ## Problems
 
 Here are all problems in this test set:
@@ -75,11 +84,11 @@ New problems are welcome: open a PR (preferred), or complete the **[submission f
 
 ## Citation
 
-If you use `qpbenchmark` in your scientific works, please cite it *e.g.* as follows:
+If you use `qpbenchmark` in your works, please cite all its contributors as follows:
 
 ```bibtex
 @software{qpbenchmark2024,
-  author = {Caron, Stéphane and Zaki, Akram and Otta, Pavel and Arnström, Daniel and Carpentier, Justin},
+  author = {Caron, Stéphane and Zaki, Akram and Otta, Pavel and Arnström, Daniel and Carpentier, Justin and Leziart, Pierre-Alexandre},
   license = {Apache-2.0},
   month = jan,
   title = {{qpbenchmark: Benchmark for quadratic programming solvers available in Python}},
