@@ -37,8 +37,7 @@ class FreeForAllQpbenchmark(qpbenchmark.TestSet):
 
     @property
     def sparse_only(self) -> bool:
-        """This test set is open to sparse and dense matrices."""
-        return False
+        return True
 
     def __init__(self):
         """Initialize test set."""
@@ -50,6 +49,9 @@ class FreeForAllQpbenchmark(qpbenchmark.TestSet):
         self.__add_known_solver_timeouts()
 
     def __add_known_solver_issues(self):
+        # Segmentation faults (problems are too large?)
+        self.known_solver_issues.add(("CONT-200", "hpipm"))
+        self.known_solver_issues.add(("CONT-201", "hpipm"))
         # https://github.com/Simple-Robotics/proxsuite/issues/63
         self.known_solver_issues.add(("QGFRDXPN", "proxqp"))
         # https://github.com/ERGO-Code/HiGHS/issues/995
