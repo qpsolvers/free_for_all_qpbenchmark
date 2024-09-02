@@ -38,7 +38,7 @@ Community-built test set to benchmark QP solvers.
 | solver   | version     |
 |:---------|:------------|
 | clarabel | 0.9.0       |
-| cvxopt   | 0.0.0       |
+| cvxopt   | 1.3.2       |
 | daqp     | 0.5.1.post1 |
 | ecos     | 2.0.14      |
 | highs    | 1.7.2       |
