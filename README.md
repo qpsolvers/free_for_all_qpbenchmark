@@ -4,10 +4,6 @@ This repository contains quadratic programs (QPs) in a format suitable for [qpbe
 
 - 📈 <a href="results/free_for_all.md"><strong>Free-for-all test set results</strong></a>
 
-Are you working on a QP right now? Join the benchmark by submitting it to this test set:
-
-- **[Submit a new problem](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/new?template=new_problem.md)**
-
 ## Installation
 
 The recommended process is to install the benchmark and all solvers in an isolated environment using ``conda``:
@@ -23,64 +19,50 @@ It is also possible to install the benchmark individually by ``pip install qpben
 
 Run the test set as follows:
 
-```
+```console
 python free_for_all.py run
 ```
 
 The outcome, written to the `results/` directory, is a standardized report comparing all available solvers against the different [benchmark metrics](https://github.com/qpsolvers/qpbenchmark#metrics). You can check out and post your own results in the [Results forum](https://github.com/qpsolvers/free_for_all_qpbenchmark/discussions/categories/results).
 
-## Subset
+## Dense subset
 
-A subset is distributed in this repository:
+A *dense* subset is distributed in this repository to include solvers that specialize in dense problems.
 
-| Subset name | Description | Problems | Results |
-|-------------|-------------|----------|---------|
-| - | All problems. | 28 / 28 | [Report](https://github.com/qpsolvers/free_for_all_qpbenchmark/blob/main/results/free_for_all.md) |
-| Dense | Excluding large sparse problems. | 22 / 28 | [Report](https://github.com/qpsolvers/free_for_all_qpbenchmark/blob/main/results/free_for_all_dense.md) |
+- 📈 [Dense subtest results](https://github.com/qpsolvers/free_for_all_qpbenchmark/blob/main/results/free_for_all_dense.md)
+
+To run the dense subset:
+
+```console
+python free_for_all_dense.py run
+```
+
+## Contributing
+
+Do you have quadratic programs to share? Join the benchmark by submitting it to this test set: open a PR (preferred), or complete the submission form:
+
+- 🙌 **[Submit a new problem](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/new?template=new_problem.md)**
+
+You can also contribute by running the benchmark on your machine and posting your results to the [Results forum](https://github.com/qpsolvers/free_for_all_qpbenchmark/discussions/categories/results).
 
 ## Problems
 
 Here are all problems in this test set:
 
-| Problem name  | CUTE [classification](https://www.cuter.rl.ac.uk//Problems/classification.shtml) | Source and details |
-|---------------|-------------|-----------------------------------|
-| ``CONT-050``  | QLR2-AN-2597-2401 | [Maros-Meszaros test set](https://www.cuter.rl.ac.uk/Problems/marmes.shtml) |
-| ``CONT-100``  | QLR2-AN-10197-9801 | ↑ |
-| ``CONT-101``  | QLR2-AN-10197-10098 | ↑ |
-| ``CONT-200``  | QLR2-AN-40397-39601 | ↑ |
-| ``CONT-201``  | QLR2-AN-40397-40198 | ↑ |
-| ``CONT-300``  | QLR2-AN-90597-90298 | ↑ |
-| ``DOCSLS``    | QLR2-AN-3-3 | From [this issue](https://github.com/qpsolvers/qpsolvers/issues/278) |
-| ``GNAR0``     | QLR2-AN-2-1 | Proposed in [#2](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/2) and [#3](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/3), details in [this paper](https://hal.inria.fr/hal-01418462/document) |
-| ``GNAR1``     | QLR2-AN-2-1 | ↑ |
-| ``GNAR2``     | QLR2-AN-2-1 | ↑ |
-| ``GNAR3``     | QLR2-AN-2-1 | ↑ |
-| ``GNAR4``     | QLR2-AN-2-1 | ↑ |
-| ``ICULS0``    | QLR2-AN-1000-0 | Proposed in [#1](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/1) |
-| ``ICULS1``    | QLR2-AN-1000-0 | ↑ |
-| ``LIPMWALK0`` | QLR2-RN-16-32 | Proposed in [#3](https://github.com/qpsolvers/mpc_qpbenchmark/issues/3), details in [this paper](https://inria.hal.science/inria-00390462) |
-| ``LIPMWALK1`` | QLR2-RN-16-32 | ↑ |
-| ``LIPMWALK2`` | QLR2-RN-16-32 | ↑ |
-| ``LIPMWALK3`` | QLR2-RN-16-32 | ↑ |
-| ``LIPMWALK4`` | QLR2-RN-16-32 | ↑ |
-| ``QUADCMPC1`` | QLR2-RN-768-896 | Proposed in [mpc\_qpbenchmark#1](https://github.com/qpsolvers/mpc_qpbenchmark/issues/1), details in [this thesis](https://laas.hal.science/tel-03936109/document) |
-| ``QUADCMPC2`` | QLR2-RN-768-896 | ↑ |
-| ``QUADCMPC3`` | QLR2-RN-768-896 | ↑ |
-| ``QUADCMPC4`` | QLR2-RN-768-896 | ↑ |
-| ``WHLIPBAL0`` | QLR2-RN-50-100 | Proposed in [#4](https://github.com/qpsolvers/mpc_qpbenchmark/issues/4), details in [this paper](https://inria.hal.science/hal-04198663/) |
-| ``WHLIPBAL1`` | QLR2-RN-50-100 | ↑ |
-| ``WHLIPBAL2`` | QLR2-RN-50-100 | ↑ |
-| ``WHLIPBAL3`` | QLR2-RN-50-100 | ↑ |
-| ``WHLIPBAL4`` | QLR2-RN-50-100 | ↑ |
+| Problem name  | Source and details |
+|---------------|--------------------|
+| ``CONT-*``    | [Maros-Meszaros test set](https://www.cuter.rl.ac.uk/Problems/marmes.shtml) |
+| ``DOCSLS``    | From [this issue](https://github.com/qpsolvers/qpsolvers/issues/278) |
+| ``GNAR*``     | Proposed in [#2](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/2) and [#3](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/3), details in [this paper](https://hal.inria.fr/hal-01418462/document) |
+| ``ICULS*``    | Proposed in [#1](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/1) |
+| ``LIPMWALK*`` | Proposed in [#3](https://github.com/qpsolvers/mpc_qpbenchmark/issues/3), details in [this paper](https://inria.hal.science/inria-00390462) |
+| ``QUADCMPC*`` | Proposed in [mpc\_qpbenchmark#1](https://github.com/qpsolvers/mpc_qpbenchmark/issues/1), details in [this thesis](https://laas.hal.science/tel-03936109/document) |
+| ``WHLIPBAL*`` | Proposed in [#4](https://github.com/qpsolvers/mpc_qpbenchmark/issues/4), details in [this paper](https://inria.hal.science/hal-04198663/) |
 
 These problems have been contributed by:
 
 - [@paLeziart](https://github.com/paLeziart): QUADCMPC
 - [@stephane-caron](https://github.com/stephane-caron): LIPMWALK, WHLIPBAL
-
-## Contributing
-
-New problems are welcome: open a PR (preferred), or complete the **[submission form](https://github.com/qpsolvers/free_for_all_qpbenchmark/issues/new?template=new_problem.md)** and we will add them to the test set. You can also contribute by running the benchmark on your machine and posting your results to the [Results forum](https://github.com/qpsolvers/free_for_all_qpbenchmark/discussions/categories/results).
 
 ## Citation
 
