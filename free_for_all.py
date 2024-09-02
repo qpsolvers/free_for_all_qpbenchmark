@@ -49,75 +49,24 @@ class FreeForAll(qpbenchmark.TestSet):
         self.__add_known_solver_timeouts()
 
     def __add_known_solver_issues(self):
-        # https://github.com/Simple-Robotics/proxsuite/issues/63
-        self.known_solver_issues.add(("QGFRDXPN", "proxqp"))
         self.known_solver_issues.add(("CONT-100", "highs"))
         self.known_solver_issues.add(("CONT-101", "highs"))
         self.known_solver_issues.add(("CONT-200", "highs"))
         self.known_solver_issues.add(("CONT-201", "highs"))
         self.known_solver_issues.add(("CONT-300", "highs"))
-        # https://github.com/ERGO-Code/HiGHS/issues/995
-        self.known_solver_issues.add(("STADAT1", "highs"))
 
     def __add_known_solver_timeouts(self):
         minutes = 60.0  # [s]
         self.known_solver_timeouts.update(
             {
-                ("AUG2D", "highs", "*"): 40 * minutes,
-                ("AUG2D", "proxqp", "high_accuracy"): 40 * minutes,
-                ("AUG2DC", "highs", "*"): 40 * minutes,
-                ("AUG2DC", "proxqp", "high_accuracy"): 40 * minutes,
-                ("AUG2DCQP", "proxqp", "high_accuracy"): 20 * minutes,
-                ("AUG2DQP", "proxqp", "high_accuracy"): 30 * minutes,
-                ("BOYD1", "proxqp", "*"): 30 * minutes,
-                ("BOYD2", "cvxopt", "mid_accuracy"): 30 * minutes,
-                ("BOYD2", "proxqp", "*"): 20 * minutes,
+                ("CONT-100", "proxqp", "*"): 5 * minutes,
                 ("CONT-101", "proxqp", "*"): 30 * minutes,
+                ("CONT-200", "cvxopt", "*"): 5 * minutes,
                 ("CONT-200", "proxqp", "*"): 20 * minutes,
+                ("CONT-201", "cvxopt", "*"): 3 * minutes,
                 ("CONT-201", "proxqp", "*"): 30 * minutes,
                 ("CONT-300", "cvxopt", "*"): 20 * minutes,
-                ("CONT-300", "highs", "default"): 30 * minutes,
-                ("CONT-300", "highs", "high_accuracy"): 30 * minutes,
                 ("CONT-300", "proxqp", "*"): 60 * minutes,
-                ("CVXQP1_L", "proxqp", "*"): 20 * minutes,
-                ("CVXQP2_L", "proxqp", "high_accuracy"): 30 * minutes,
-                ("CVXQP3_L", "cvxopt", "*"): 20 * minutes,
-                ("CVXQP3_L", "proxqp", "*"): 30 * minutes,
-                ("DTOC3", "proxqp", "high_accuracy"): 20 * minutes,
-                ("DTOC3", "proxqp", "low_accuracy"): 20 * minutes,
-                ("DTOC3", "proxqp", "mid_accuracy"): 20 * minutes,
-                ("EXDATA", "proxqp", "*"): 30 * minutes,
-                ("LISWET1", "proxqp", "*"): 20 * minutes,
-                ("LISWET10", "proxqp", "*"): 50 * minutes,
-                ("LISWET11", "proxqp", "high_accuracy"): 40 * minutes,
-                ("LISWET11", "proxqp", "mid_accuracy"): 30 * minutes,
-                ("LISWET12", "proxqp", "high_accuracy"): 20 * minutes,
-                ("LISWET12", "proxqp", "low_accuracy"): 60 * minutes,
-                ("LISWET12", "proxqp", "mid_accuracy"): 60 * minutes,
-                ("LISWET2", "proxqp", "high_accuracy"): 20 * minutes,
-                ("LISWET2", "proxqp", "mid_accuracy"): 20 * minutes,
-                ("LISWET3", "proxqp", "high_accuracy"): 30 * minutes,
-                ("LISWET4", "proxqp", "high_accuracy"): 20 * minutes,
-                ("LISWET4", "proxqp", "mid_accuracy"): 30 * minutes,
-                ("LISWET5", "proxqp", "high_accuracy"): 20 * minutes,
-                ("LISWET6", "proxqp", "high_accuracy"): 20 * minutes,
-                ("LISWET6", "proxqp", "mid_accuracy"): 20 * minutes,
-                ("LISWET7", "proxqp", "high_accuracy"): 30 * minutes,
-                ("LISWET7", "proxqp", "mid_accuracy"): 30 * minutes,
-                ("LISWET8", "proxqp", "high_accuracy"): 30 * minutes,
-                ("LISWET8", "proxqp", "mid_accuracy"): 30 * minutes,
-                ("LISWET9", "proxqp", "high_accuracy"): 30 * minutes,
-                ("LISWET9", "proxqp", "low_accuracy"): 30 * minutes,
-                ("LISWET9", "proxqp", "mid_accuracy"): 30 * minutes,
-                ("POWELL20", "proxqp", "*"): 30 * minutes,
-                ("QGFRDXPN", "proxqp", "*"): 20 * minutes,
-                ("QSHIP08L", "proxqp", "*"): 20 * minutes,
-                ("QSHIP12L", "proxqp", "*"): 20 * minutes,
-                ("STADAT1", "proxqp", "*"): 20 * minutes,
-                ("STADAT2", "proxqp", "*"): 20 * minutes,
-                ("STADAT3", "proxqp", "*"): 20 * minutes,
-                ("UBH1", "proxqp", "*"): 20 * minutes,
-                ("YAO", "proxqp", "*"): 20 * minutes,
             }
         )
 
