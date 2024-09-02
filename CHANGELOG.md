@@ -11,5 +11,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Starting this changelog.
 
-[unreleased]: https://github.com/upkie/upkie/compare/2024-09-02...HEAD
-[2024-09-02]: https://github.com/upkie/upkie/releases/tag/2024-09-02
+[unreleased]: https://github.com/qpsolvers/free_for_all_qpbenchmark/compare/2024-09-02...HEAD
+[2024-09-02]: https://github.com/qpsolvers/free_for_all_qpbenchmark/releases/tag/2024-09-02
