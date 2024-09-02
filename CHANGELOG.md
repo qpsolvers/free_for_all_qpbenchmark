@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add Gurobi to the Anaconda environment
+
 ## [2024-09-02]
 
 Starting this changelog.
