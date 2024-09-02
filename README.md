@@ -3,6 +3,7 @@
 This repository contains quadratic programs (QPs) in a format suitable for [qpbenchmark](https://github.com/qpsolvers/qpbenchmark). It is [free-for-all](https://en.wiktionary.org/wiki/free-for-all#Noun), open to problems from all fields, hard and easy. Here is the report produced by the benchmarking tool:
 
 - 📈 <a href="results/free_for_all.md"><strong>Free-for-all test set results</strong></a>
+- 📈 [Dense subtest results](https://github.com/qpsolvers/free_for_all_qpbenchmark/blob/main/results/free_for_all_dense.md)
 
 ## Installation
 
@@ -24,18 +25,6 @@ python free_for_all.py run
 ```
 
 The outcome, written to the `results/` directory, is a standardized report comparing all available solvers against the different [benchmark metrics](https://github.com/qpsolvers/qpbenchmark#metrics). You can check out and post your own results in the [Results forum](https://github.com/qpsolvers/free_for_all_qpbenchmark/discussions/categories/results).
-
-## Dense subset
-
-A *dense* subset is distributed in this repository to include solvers that specialize in dense problems.
-
-- 📈 [Dense subtest results](https://github.com/qpsolvers/free_for_all_qpbenchmark/blob/main/results/free_for_all_dense.md)
-
-To run the dense subset:
-
-```console
-python free_for_all_dense.py run
-```
 
 ## Contributing
 
