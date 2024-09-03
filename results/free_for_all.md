@@ -2,8 +2,8 @@
 
 | Number of problems | 28 |
 |:-------------------|:--------------------|
-| Benchmark version  | 2.2.3 |
-| Date               | 2024-09-02 15:27:02.638152+00:00 |
+| Benchmark version  | 2.3.0 |
+| Date               | 2024-09-03 14:18:49.612476+00:00 |
 | CPU                | [12th Gen Intel(R) Core(TM) i7-12800H](#cpu-info) |
 | Run by             | [@stephane-caron](https://github.com/stephane-caron/) |
 
@@ -35,16 +35,17 @@ Community-built test set to benchmark QP solvers.
 
 ## Solvers
 
-| solver   | version     |
-|:---------|:------------|
-| clarabel | 0.9.0       |
-| cvxopt   | 1.3.2       |
-| highs    | 1.7.2       |
-| osqp     | 0.6.7.post0 |
-| piqp     | 0.4.2       |
-| proxqp   | 0.6.7       |
-| qpalm    | 1.2.3       |
-| scs      | 3.2.7       |
+| solver   | version               |
+|:---------|:----------------------|
+| clarabel | 0.9.0                 |
+| cvxopt   | 1.3.2                 |
+| gurobi   | 11.0.3 (size-limited) |
+| highs    | 1.7.2                 |
+| osqp     | 0.6.7.post0           |
+| piqp     | 0.4.2                 |
+| proxqp   | 0.6.7                 |
+| qpalm    | 1.2.3                 |
+| scs      | 3.2.7                 |
 
 All solvers were called via [qpsolvers](https://github.com/qpsolvers/qpsolvers) v4.3.3.
 
@@ -60,8 +61,8 @@ All solvers were called via [qpsolvers](https://github.com/qpsolvers/qpsolvers) 
 | `cpuinfo_version_string` | 9.0.0 |
 | `family` | 6 |
 | `flags` | `3dnowprefetch`, `abm`, `acpi`, `adx`, `aes`, `aperfmperf`, `apic`, `arat`, `arch_capabilities`, `arch_lbr`, `arch_perfmon`, `art`, `avx`, `avx2`, `avx_vnni`, `bmi1`, `bmi2`, `bts`, `clflush`, `clflushopt`, `clwb`, `cmov`, `constant_tsc`, `cpuid`, `cpuid_fault`, `cx16`, `cx8`, `de`, `ds_cpl`, `dtes64`, `dtherm`, `dts`, `epb`, `ept`, `ept_ad`, `erms`, `est`, `f16c`, `flexpriority`, `flush_l1d`, `fma`, `fpu`, `fsgsbase`, `fsrm`, `fxsr`, `gfni`, `hfi`, `ht`, `hwp`, `hwp_act_window`, `hwp_epp`, `hwp_notify`, `hwp_pkg_req`, `ibpb`, `ibrs`, `ibrs_enhanced`, `ibt`, `ida`, `intel_pt`, `invpcid`, `lahf_lm`, `lm`, `mca`, `mce`, `md_clear`, `mmx`, `monitor`, `movbe`, `movdir64b`, `movdiri`, `msr`, `mtrr`, `nonstop_tsc`, `nopl`, `nx`, `ospke`, `osxsave`, `pae`, `pat`, `pbe`, `pcid`, `pclmulqdq`, `pconfig`, `pdcm`, `pdpe1gb`, `pebs`, `pge`, `pku`, `pln`, `pni`, `popcnt`, `pse`, `pse36`, `pts`, `rdpid`, `rdrand`, `rdrnd`, `rdseed`, `rdtscp`, `rep_good`, `sdbg`, `sep`, `serialize`, `sha`, `sha_ni`, `smap`, `smep`, `smx`, `split_lock_detect`, `ss`, `ssbd`, `sse`, `sse2`, `sse4_1`, `sse4_2`, `ssse3`, `stibp`, `syscall`, `tm`, `tm2`, `tme`, `tpr_shadow`, `tsc`, `tsc_adjust`, `tsc_deadline_timer`, `tsc_known_freq`, `tscdeadline`, `umip`, `vaes`, `vme`, `vmx`, `vnmi`, `vpclmulqdq`, `vpid`, `waitpkg`, `x2apic`, `xgetbv1`, `xsave`, `xsavec`, `xsaveopt`, `xsaves`, `xtopology`, `xtpr` |
-| `hz_actual_friendly` | 891.6930 MHz |
-| `hz_advertised_friendly` | 891.6930 MHz |
+| `hz_actual_friendly` | 1.9822 GHz |
+| `hz_advertised_friendly` | 1.9822 GHz |
 | `l1_data_cache_size` | 557056 |
 | `l1_instruction_cache_size` | 720896 |
 | `l2_cache_associativity` | 7 |
@@ -92,6 +93,9 @@ Solvers for each settings are configured as follows:
 | clarabel | ``tol_gap_abs``                  | -         |           1e-09 |          0.001 |          1e-06 |
 | clarabel | ``tol_gap_rel``                  | -         |           0     |          0     |          0     |
 | cvxopt   | ``feastol``                      | -         |           1e-09 |          0.001 |          1e-06 |
+| gurobi   | ``FeasibilityTol``               | -         |           1e-09 |          0.001 |          1e-06 |
+| gurobi   | ``OptimalityTol``                | -         |           1e-09 |          0.001 |          1e-06 |
+| gurobi   | ``TimeLimit``                    | 10.0      |          10     |         10     |         10     |
 | highs    | ``dual_feasibility_tolerance``   | -         |           1e-09 |          0.001 |          1e-06 |
 | highs    | ``primal_feasibility_tolerance`` | -         |           1e-09 |          0.001 |          1e-06 |
 | highs    | ``time_limit``                   | 10.0      |          10     |         10     |         10     |
@@ -134,6 +138,7 @@ Solvers are compared over the whole test set by [shifted geometric mean](https:/
 | cvxopt   |                                78.6 |                                  4.2 |                                         3.0 |                                     3.0 |                                 2.9 |
 | daqp     |                                72.7 |                                  3.2 |                                         3.9 |                                     3.9 |                                 3.7 |
 | ecos     |                                59.1 |                                  5.0 |                                         5.8 |                                     5.8 |                                 5.6 |
+| gurobi   |                                60.7 |                                  4.8 |                                         5.6 |                                     5.6 |                                 5.3 |
 | highs    |                                71.4 |                                  2.7 |                                         3.0 |                                   268.3 |                                 3.1 |
 | osqp     |                                78.6 |                                  1.6 |                                         2.0 |                                    32.0 |                                 2.3 |
 | piqp     |                                89.3 |                                  2.4 |                                         1.5 |                                     1.5 |                                 1.4 |
@@ -153,6 +158,7 @@ Solvers are compared over the whole test set by [shifted geometric mean](https:/
 | cvxopt   |                                17.9 |                                  4.2 |                                         2.4 |                                 22514.1 |                            987253.8 |
 | daqp     |                                72.7 |                                  3.2 |                                         3.0 |                                     1.4 |                                 2.7 |
 | ecos     |                                 0.0 |                                  5.0 |                                         4.5 |                                893571.4 |                          50707211.4 |
+| gurobi   |                                32.1 |                                  4.7 |                                         4.3 |                              10130716.0 |                              4067.8 |
 | highs    |                                 0.0 |                                  2.7 |                                        12.5 |                           88342944247.8 |                         171888496.3 |
 | osqp     |                                42.9 |                                  5.3 |                                         4.8 |                                     2.7 |                                 7.8 |
 | piqp     |                                82.1 |                                  3.3 |                                         2.0 |                                     1.0 |                                 3.4 |
@@ -172,6 +178,7 @@ Solvers are compared over the whole test set by [shifted geometric mean](https:/
 | cvxopt   |                                82.1 |                                 65.4 |                                 515499847.7 |                                     5.9 |                                 2.7 |
 | daqp     |                                72.7 |                                 62.5 |                                1078627982.6 |                                    10.8 |                                 3.0 |
 | ecos     |                                45.5 |                                 98.5 |                                1476223746.1 |                                    23.2 |                                60.5 |
+| gurobi   |                                57.1 |                                 94.0 |                                1417642295.2 |                                    96.0 |                                 4.3 |
 | highs    |                                53.6 |                                 43.7 |                                 644375975.7 |                                701704.2 |                               979.4 |
 | osqp     |                                57.1 |                                 37.6 |                                1311176866.5 |                                    16.5 |                                59.6 |
 | piqp     |                                96.4 |                                 16.1 |                                  65024815.0 |                                     1.0 |                                 4.6 |
@@ -191,6 +198,7 @@ Solvers are compared over the whole test set by [shifted geometric mean](https:/
 | cvxopt   |                                53.6 |                                  4.2 |                                         2.4 |                                    39.2 |                              1092.0 |
 | daqp     |                                72.7 |                                  3.2 |                                         3.0 |                                     2.3 |                                 3.0 |
 | ecos     |                                 4.5 |                                  5.0 |                                         4.5 |                                  1489.9 |                             55970.8 |
+| gurobi   |                                53.6 |                                  4.7 |                                         4.3 |                                 16856.5 |                                 8.8 |
 | highs    |                                14.3 |                                  2.7 |                                         2.4 |                             146965874.8 |                            189763.2 |
 | osqp     |                                53.6 |                                  4.3 |                                         4.4 |                                     3.8 |                                 9.4 |
 | piqp     |                                89.3 |                                  2.2 |                                         1.2 |                                     1.0 |                                 2.5 |
@@ -212,6 +220,7 @@ Precentage of problems each solver is able to solve:
 | cvxopt   |        79 |              18 |             82 |             54 |
 | daqp     |        73 |              73 |             73 |             73 |
 | ecos     |        59 |               0 |             45 |              5 |
+| gurobi   |        61 |              32 |             57 |             54 |
 | highs    |        71 |               0 |             54 |             14 |
 | osqp     |        79 |              43 |             57 |             54 |
 | piqp     |        89 |              82 |             96 |             89 |
@@ -231,6 +240,7 @@ Percentage of problems where "solved" return codes are correct:
 | cvxopt   |       100 |              39 |             96 |             75 |
 | daqp     |       100 |             100 |            100 |            100 |
 | ecos     |       100 |              41 |             86 |             45 |
+| gurobi   |       100 |              71 |             96 |             93 |
 | highs    |        93 |              21 |             71 |             36 |
 | osqp     |        93 |              86 |             71 |             89 |
 | piqp     |       100 |             100 |             96 |            100 |
@@ -252,6 +262,7 @@ Shifted geometric mean of solver computation times (1.0 is the best):
 | cvxopt   |       4.2 |             4.2 |           65.4 |            4.2 |
 | daqp     |       3.2 |             3.2 |           62.5 |            3.2 |
 | ecos     |       5.0 |             5.0 |           98.5 |            5.0 |
+| gurobi   |       4.8 |             4.7 |           94.0 |            4.7 |
 | highs    |       2.7 |             2.7 |           43.7 |            2.7 |
 | osqp     |       1.6 |             5.3 |           37.6 |            4.3 |
 | piqp     |       2.4 |             3.3 |           16.1 |            2.2 |
@@ -277,6 +288,7 @@ Shifted geometric means of primal residuals (1.0 is the best):
 | cvxopt   |       3.0 |             2.4 |    515499847.7 |            2.4 |
 | daqp     |       3.9 |             3.0 |   1078627982.6 |            3.0 |
 | ecos     |       5.8 |             4.5 |   1476223746.1 |            4.5 |
+| gurobi   |       5.6 |             4.3 |   1417642295.2 |            4.3 |
 | highs    |       3.0 |            12.5 |    644375975.7 |            2.4 |
 | osqp     |       2.0 |             4.8 |   1311176866.5 |            4.4 |
 | piqp     |       1.5 |             2.0 |     65024815.0 |            1.2 |
@@ -300,6 +312,7 @@ Shifted geometric means of dual residuals (1.0 is the best):
 | cvxopt   |       3.0 |         22514.1 |            5.9 |           39.2 |
 | daqp     |       3.9 |             1.4 |           10.8 |            2.3 |
 | ecos     |       5.8 |        893571.4 |           23.2 |         1489.9 |
+| gurobi   |       5.6 |      10130716.0 |           96.0 |        16856.5 |
 | highs    |     268.3 |   88342944247.8 |       701704.2 |    146965874.8 |
 | osqp     |      32.0 |             2.7 |           16.5 |            3.8 |
 | piqp     |       1.5 |             1.0 |            1.0 |            1.0 |
@@ -323,6 +336,7 @@ Shifted geometric means of duality gaps (1.0 is the best):
 | cvxopt   |       2.9 |        987253.8 |            2.7 |         1092.0 |
 | daqp     |       3.7 |             2.7 |            3.0 |            3.0 |
 | ecos     |       5.6 |      50707211.4 |           60.5 |        55970.8 |
+| gurobi   |       5.3 |          4067.8 |            4.3 |            8.8 |
 | highs    |       3.1 |     171888496.3 |          979.4 |       189763.2 |
 | osqp     |       2.3 |             7.8 |           59.6 |            9.4 |
 | piqp     |       1.4 |             3.4 |            4.6 |            2.5 |
