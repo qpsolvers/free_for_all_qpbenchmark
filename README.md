@@ -1,6 +1,6 @@
 # Free-for-all test set for QP solvers
 
-This repository contains quadratic programs (QPs) in a format suitable for [qpbenchmark](https://github.com/qpsolvers/qpbenchmark). It is [free-for-all](https://en.wiktionary.org/wiki/free-for-all#Noun), open to problems from all fields, hard and easy. Here is the report produced by the benchmarking tool:
+This repository contains quadratic programs (QPs) in a format suitable for [qpbenchmark](https://github.com/qpsolvers/qpbenchmark). It is [free-for-all](https://en.wiktionary.org/wiki/free-for-all#Noun), open to problems from all fields, hard and easy. Here are the reports produced by the benchmarking tool:
 
 - 📈 <a href="results/free_for_all.md"><strong>Free-for-all test set results</strong></a>
 - 📈 [Dense subtest results](https://github.com/qpsolvers/free_for_all_qpbenchmark/blob/main/results/free_for_all_dense.md)
