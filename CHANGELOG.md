@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [2025-05-07]
+
 ### Added
 
 - Add Gurobi to the Anaconda environment
@@ -26,5 +28,6 @@ All notable changes to this project will be documented in this file.
 
 Starting this changelog.
 
-[unreleased]: https://github.com/qpsolvers/free_for_all_qpbenchmark/compare/2024-09-02...HEAD
+[unreleased]: https://github.com/qpsolvers/free_for_all_qpbenchmark/compare/2025-05-07...HEAD
+[2025-05-07]: https://github.com/qpsolvers/free_for_all_qpbenchmark/compare/2024-09-02...2025-05-07
 [2024-09-02]: https://github.com/qpsolvers/free_for_all_qpbenchmark/releases/tag/2024-09-02
