@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Switch to pixi for running the test set
+
 ## [2025-05-07]
 
 ### Added
