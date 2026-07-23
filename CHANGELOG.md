@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [2025-07-23]
+
 ### Added
 
 - Switch to pixi for running the test set
@@ -36,6 +38,7 @@ All notable changes to this project will be documented in this file.
 
 Starting this changelog.
 
-[unreleased]: https://github.com/qpsolvers/free_for_all_qpbenchmark/compare/2025-05-07...HEAD
-[2025-05-07]: https://github.com/qpsolvers/free_for_all_qpbenchmark/compare/2024-09-02...2025-05-07
+[unreleased]: https://github.com/qpsolvers/free_for_all_qpbenchmark/compare/2025-07-23...HEAD
+[2025-07-23]: https://github.com/qpsolvers/free_for_all_qpbenchmark/releases/tag/2025-07-23
+[2025-05-07]: https://github.com/qpsolvers/free_for_all_qpbenchmark/releases/tag/2025-05-07
 [2024-09-02]: https://github.com/qpsolvers/free_for_all_qpbenchmark/releases/tag/2024-09-02
