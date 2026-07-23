@@ -8,6 +8,10 @@ All notable changes to this project will be documented in this file.
 
 - Switch to pixi for running the test set
 
+### Changed
+
+- qpbenchmark: Update to qpbenchmark 2.7.1
+
 ## [2025-05-07]
 
 ### Added
