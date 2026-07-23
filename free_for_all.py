@@ -66,6 +66,7 @@ class FreeForAll(qpbenchmark.TestSet):
                 ("CONT-201", "cvxopt", "*"): 3 * minutes,
                 ("CONT-201", "proxqp", "*"): 30 * minutes,
                 ("CONT-300", "cvxopt", "*"): 20 * minutes,
+                ("CONT-300", "kvxopt", "*"): 30 * minutes,
                 ("CONT-300", "proxqp", "*"): 60 * minutes,
             }
         )
