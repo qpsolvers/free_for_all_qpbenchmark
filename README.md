@@ -57,7 +57,7 @@ These problems have been contributed by:
 
 ## Citation
 
-This test set is run using `qpbenchmark`. If you use it in your works, you can refer to it using [this citation](https://github.com/qpsolvers/qpbenchmark#citation).
+This test set is run using `qpbenchmark`. If you use it in your work, you can refer to it using [this citation](https://github.com/qpsolvers/qpbenchmark#citation).
 
 ## See also
 
