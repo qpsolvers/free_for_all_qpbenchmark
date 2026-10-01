@@ -1,8 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-#
 # SPDX-License-Identifier: Apache-2.0
-# Copyright 2023 Inria
 
 """GHFFA01 problem.
 
@@ -15,6 +11,7 @@ See https://github.com/qpsolvers/qpbenchmark/issues/25
 from os import path
 
 import numpy as np
+
 from qpbenchmark.problem import Problem
 
 

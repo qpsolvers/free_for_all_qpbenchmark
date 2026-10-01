@@ -1,9 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-#
 # SPDX-License-Identifier: Apache-2.0
-# Copyright 2022 Stéphane Caron
-# Copyright 2023-2024 Inria
 
 """Free-for-all test set."""
 
@@ -11,9 +6,10 @@ import os
 from typing import Iterator, Union
 
 import numpy as np
-import qpbenchmark
 import scipy.io as spio
 import scipy.sparse as spa
+
+import qpbenchmark
 from qpbenchmark.benchmark import main
 from qpbenchmark.problem import Problem
 

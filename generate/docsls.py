@@ -1,8 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-#
 # SPDX-License-Identifier: Apache-2.0
-# Copyright 2024 Inria
 
 """Small least-squares problem from the qpsolvers documentation.
 
@@ -12,6 +8,7 @@ See: https://qpsolvers.github.io/qpsolvers/least-squares.html
 from os import path
 
 import numpy as np
+
 from qpbenchmark.problem import Problem
 
 R = np.array([[1.0, 2.0, 0.0], [-8.0, 3.0, 2.0], [0.0, 1.0, 1.0]])

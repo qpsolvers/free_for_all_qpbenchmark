@@ -1,19 +1,14 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-#
 # SPDX-License-Identifier: Apache-2.0
-# Copyright 2022 Stéphane Caron
-# Copyright 2023-2024 Inria
 
 """Dense subset of the Free-for-all test set."""
 
 import os
 from typing import Iterator
 
+from free_for_all import FreeForAll
+
 from qpbenchmark.benchmark import main
 from qpbenchmark.problem import Problem
-
-from free_for_all import FreeForAll
 
 
 class FreeForAllDense(FreeForAll):

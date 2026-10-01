@@ -1,8 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-#
 # SPDX-License-Identifier: Apache-2.0
-# Copyright 2023 Inria
 
 """Ill-conditioned unconstrained least squares (ICULS) problem.
 
@@ -12,6 +8,7 @@ See: https://github.com/qpsolvers/qpbenchmark/issues/29
 from os import path
 
 import numpy as np
+
 from qpbenchmark.problem import Problem
 
 
